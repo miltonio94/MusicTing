@@ -2,8 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    gui.setup();
-    gui.add(butt.setup("ENTER"));
+    seColourScheme();
+    setGui();
 }
 
 //--------------------------------------------------------------
@@ -13,7 +13,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    gui.draw();
+    gui->draw();
 }
 
 //--------------------------------------------------------------
@@ -69,4 +69,36 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
+}
+
+//--------------------------------------------------------------
+void ofApp::exit(){
+    gui->saveSettings("settings..xml");
+    delete gui;
+}
+
+//--------------------------------------------------------------
+void ofApp::guiEvent(ofxUIEventArgs &e){
+    if(e.getName() == "Music Ting"){
+        ofxUITextInput *urlIn = (ofxUITextInput *) e.widget;
+        url = urlIn->getTextString();
+        cout << url;
+        
+    }
+}
+
+//--------------------------------------------------------------
+void ofApp::setGui(){
+    gui = new ofxUISuperCanvas("Music Ting");
+    gui->addSpacer();
+    gui->addTextInput("URL", "website url");
+    gui->autoSizeToFitWidgets();
+    ofAddListener(gui->newGUIEvent, this, &ofApp::guiEvent);
+    gui->loadSettings("settings.xml");
+}
+
+
+//--------------------------------------------------------------
+void ofApp::setColourScheme(){
+    
 }

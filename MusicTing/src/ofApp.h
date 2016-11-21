@@ -1,8 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxGui.h"
+#include "ofxUi.h"
 #include "ofxMaxim.h"
+#include "ColourSchme.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -23,8 +24,18 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    ofxPanel gui;
-    ofxButton butt;
+    ofxUISuperCanvas *gui;
+    string url;
+    ColourSchme colourScheme;
+    
+    
+    void exit();
+    void guiEvent(ofxUIEventArgs &e);
+    void setGui();
+    void setColourScheme();
+    
+    
+   
     
 		
 };
