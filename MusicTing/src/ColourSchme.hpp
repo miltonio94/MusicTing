@@ -16,15 +16,5 @@
 #include <map>
 
 struct ColourSchme{
-    std::map<char, int> colour1;
-    std::map<char, int> colour2;
-    std::map<char, int> colour3;
-    std::map<char, int> colour4;
-    std::map<char, int> colour5;
-    
-    void setColour1(int r, int g, int b);
-    void setColour2(int r, int g, int b);
-    void setColour3(int r, int g, int b);
-    void setColour4(int r, int g, int b);
-    void setColour5(int r, int g, int b);
+    std::map<char, int> colour1, colour2, colour3, colour4, colour5;
 };

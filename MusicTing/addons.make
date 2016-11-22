@@ -1,3 +1,4 @@
+ofxDmtrUI
 ofxGui
 ofxMaxim
 ofxNetwork

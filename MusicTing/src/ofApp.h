@@ -5,6 +5,7 @@
 #include "ofxMaxim.h"
 #include "ColourSchme.hpp"
 
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -23,16 +24,46 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+        void audioOut(float* output, int bufferSize, int nChannels);
+    
+    string url;
+    string urlCont;
+    unsigned int urlContIndx;
+    unsigned int count;
     
     ofxUISuperCanvas *gui;
-    string url;
     ColourSchme colourScheme;
+    ofTrueTypeFont font;
+    ofTrueTypeFont siteFont;
+    ofHttpResponse resp;
     
+    
+    bool isContNotEmpty();
+    bool isUrlNotEmpty();
+    
+    
+    // sound stuff
+//    maxiOsc osc;
+    map<char, vector<float>> sounds;
+    double phase,
+           currenttSample;
+    float freq;
+    unsigned bufferSize,
+             sampleRate;
+    ofMutex waveFormMutex;
+    ofPolyline waveLine,
+               outline;
+    float waveformStep;
+    
+//    float makeSound(int i);
+    void setSounds();
+    void updateWaveForm(int WaveResolution, vector<float> &vec);
     
     void exit();
     void guiEvent(ofxUIEventArgs &e);
     void setGui();
     void setColourScheme();
+    
     
     
    
