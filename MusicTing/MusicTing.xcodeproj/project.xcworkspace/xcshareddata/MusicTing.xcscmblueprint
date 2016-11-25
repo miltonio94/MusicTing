@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B698A7502A9A102E44B60FDF15839BA0B739ECC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3F1879151291EB5B160D29E99A4FE1593574DE3F" : 9223372036854775807,
+    "8B698A7502A9A102E44B60FDF15839BA0B739ECC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1C3C3FB6-E96E-4EAC-B06A-9AD3AE2150BA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3F1879151291EB5B160D29E99A4FE1593574DE3F" : "",
+    "8B698A7502A9A102E44B60FDF15839BA0B739ECC" : "Milton\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MusicTing",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MusicTing\/MusicTing.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.doc.gold.ac.uk:ssmit056\/SebMiltCP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3F1879151291EB5B160D29E99A4FE1593574DE3F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/miltonio94\/MusicTing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B698A7502A9A102E44B60FDF15839BA0B739ECC"
+    }
+  ]
+}
